@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyết Thư ID Final</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Menu ngang -->
+    <div class="menu-ngang">
+        <div class="logo">
+            <a href="https://re-website.com/">
+                <img src="img/Logo.png" alt="logo" height="100%">
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#nd01">Home</a></li>
+                <li><a href="#nd02">About</a></li>
+                <li><a href="#nd03">Blog</a></li>
+                <li><a href="#nd04">Contact</a></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    <!-- Menu Doc -->
+    <div class="menu-doc">
+        <div id="myDIV">
+            <button class="btn"><a href="#nd01"><i class="fa fa-circle" style=color:beige></i></button>
+            <button class="btn active"><a href="#nd02"><i class="fa fa-circle" style=color:beige></i></a></button>
+            <button class="btn"><a href="#nd03"><i class="fa fa-circle" style=color:beige></i></a></button>
+            <button class="btn"><a href="#nd04"><i class="fa fa-circle" style=color:beige></i></a></button>
+        </div>
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <!-- Home -->
+        <div class="home" id="nd01">
+            <h1>Re-Inc</h1>
+        </div>
+
+        <!-- About -->
+        <div class="about" id="nd02">
+            <div class="text">
+                <h1>GROWTH</h1>
+                <h3>IS UNCOMFORTABLE</h3>
+                <p>Love yourself enough to set boundaries. Your time and energy are precious. You get to choose how you
+                    use it. You teach people how to treat you by deciding what you will and won’t accept.</p>
+                    <button><a href="https://re-website.com/">LEARN MORE</a></button>
+            </div>
+            <div class="hinh">
+                <img src="img/1.jpg" alt="yoga" height="100%">
+            </div>
+            
+        </div>
+
+        <!-- Blog -->
+        <div class="blog" id="nd03" style="background-color: rgb(39, 24, 5);">
+            <div class="left"></div>
+            <div class="rite">
+                <h1>THE BLOG</h1>
+                <!-- Blog 1 -->
+                <div class="blog1">
+                    <img src="img/4.jpg" alt="blog1" width="100%">
+                    <h3>What is self love?</h3>
+                    <p>Self-love means not settling for less than you deserve.</p>
+                </div>
+                <!-- Blog 2 -->
+                <div class="blog2">
+                    <br><br><br><br><br>
+                    <img src="img/6.jpg" alt="blog2" width="100%">
+                    <h3>How to?</h3>
+                    <ul>
+                        <li>Exercises</li>
+                        <li>Eating Healthy</li>
+                        <li>Good relationship</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Quote -->
+        <div class="quote" id="nd04">
+            <h1>SPREAD THE HAPPINESS</h1>
+            <p>“We are very good at preparing to live, but not very good at living. We know how to sacrifice ten years
+                for a diploma, and we are willing to work very hard to get a job, a car, a house, and so on. But we have
+                difficulty remembering that we are alive in the present moment, the only moment there is for us to be
+                alive.” </p>
+            <br><br>
+            <div class="contact1"></div>
+            <div class="contact2"></div>
+            <div class="contact3"></div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <form action="/action_page.php">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email">
+                <input type="submit">
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Style Button -->
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+</body>
+
+</html>
